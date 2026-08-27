@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS (방탄소년단) - Landing Page Oficial & Gira Europa</title>
+    <meta name="description" content="Landing page oficial del grupo de K-Pop BTS. Explora la biografía y fotos reales de los 7 integrantes (RM, Jin, Suga, j-hope, Jimin, V, Jung Kook) y sus conciertos en Europa.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-symbol">⟁</span>
+                <span class="logo-text">BTS <span class="logo-korean">방탄소년단</span></span>
+            </a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#about" class="nav-link">Sobre BTS</a>
+                <a href="#members" class="nav-link">Integrantes (7)</a>
+                <a href="#gallery" class="nav-link">Gira Europa</a>
+                <a href="#discography" class="nav-link">Música</a>
+                <a href="#tour" class="nav-link">Conciertos</a>
+                <a href="#army-zone" class="nav-link highlight">ARMY Zone 💜</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="army-bomb-btn" id="armyBombToggle" title="Cambiar luz ARMY Bomb">
+                    <i class="fa-solid fa-lightbulb"></i> <span class="btn-label">ARMY Light</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menú navegación">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="assets/images/bts_hero.jpg" alt="BTS Group Banner" id="heroImage" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1600&q=80'">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="badge-tag"><i class="fa-solid fa-crown"></i> BEYOND THE SCENE • BIGHIT MUSIC</div>
+            <h1 class="hero-title">WE ARE <span class="text-gradient">BULLETPROOF</span></h1>
+            <p class="hero-subtitle">Descubre a los 7 iconos globales que revolucionaron la música mundial: <strong>RM, Jin, Suga, j-hope, Jimin, V y Jung Kook</strong>. Sus conciertos épicos en Europa y la fuerza de ARMY.</p>
+            
+            <div class="hero-buttons">
+                <a href="#members" class="btn btn-primary"><i class="fa-solid fa-users"></i> Conoce a los 7 Miembros</a>
+                <a href="#gallery" class="btn btn-secondary"><i class="fa-solid fa-earth-europe"></i> Gira por Europa</a>
+                <button class="btn btn-glow" id="playTrailerBtn"><i class="fa-solid fa-play"></i> Ver Trailer BTS</button>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Integrantes Leyenda</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">#1 Billboard Hot 100</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100M+</span>
+                    <span class="stat-label">ARMYs en el Mundo</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Estadios en Europa</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">NUESTRA HISTORIA</span>
+                <h2 class="section-title">El Fenómeno Global del K-Pop</h2>
+                <p class="section-description">Desde su debut en 2013 en Seúl hasta llenar estadios míticos como Wembley en Londres y Stade de France en París, BTS ha inspirado a millones de personas con su mensaje de 'Love Yourself'.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3>Mensaje de Autoestima</h3>
+                    <p>BTS habla abiertamente sobre la salud mental, las luchas juveniles y el amor propio, convirtiéndose en portavoces en la ONU.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>Récords Mundiales</h3>
+                    <p>Primer grupo coreano nominados al Grammy, récords en Guinness, estadios abarrotados en minutos en toda Europa y América.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Reunión 2026</h3>
+                    <p>Tras completar su servicio militar obligatorio, los 7 miembros regresan juntos para iniciar una nueva era histórica de conciertos mundiales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 Members Section -->
+    <section class="section members" id="members">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">LOS 7 INTEGRANTES</span>
+                <h2 class="section-title">Conoce a los Miembros de BTS</h2>
+                <p class="section-description">Haz clic en cada tarjeta para ver su biografía completa, solos más populares y detalles especiales.</p>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">Todos (7)</button>
+                    <button class="filter-btn" data-filter="rap">Rap Line 🎤 (RM, Suga, j-hope)</button>
+                    <button class="filter-btn" data-filter="vocal">Vocal Line 🎶 (Jin, Jimin, V, Jung Kook)</button>
+                </div>
+            </div>
+
+            <div class="members-grid" id="membersGrid">
+                
+                <!-- RM -->
+                <div class="member-card" data-category="rap" data-id="rm">
+                    <div class="member-img-wrapper">
+                        <img src="assets/images/rm.jpg" alt="RM BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/c/ca/RM_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <div class="member-badge rap-line">Rap Line • Líder</div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">RM <span class="korean-name">Kim Namjoon (김남준)</span></h3>
+                        <p class="member-role"><i class="fa-solid fa-microphone"></i> Líder & Rapero Principal</p>
+                        <p class="member-quote">"No importa quién seas, de dónde vengas o tu color de piel: habla por ti mismo."</p>
+                        <div class="member-tags">
+                            <span>Solo: Indigo</span>
+                            <span>IQ: 148</span>
+                            <span>Productor</span>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-circle-info"></i> Ver Perfil Completo</button>
+                    </div>
+                </div>
+
+                <!-- Jin -->
+                <div class="member-card" data-category="vocal" data-id="jin">
+                    <div class="member-img-wrapper">
+                        <img src="assets/images/jin.jpg" alt="Jin BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e0/BTS_Jin_on_June_12%2C_2024_%282%29.jpg'">
+                        <div class="member-badge vocal-line">Vocal Line • Worldwide Handsome</div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Jin <span class="korean-name">Kim Seokjin (김석진)</span></h3>
+                        <p class="member-role"><i class="fa-solid fa-music"></i> Sub Vocalista & Visual</p>
+                        <p class="member-quote">"Tu presencia puede dar felicidad. Espero que recuerdes eso siempre."</p>
+                        <div class="member-tags">
+                            <span>Solo: Happy</span>
+                            <span>The Astronaut</span>
+                            <span>Mayor del Grupo</span>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-circle-info"></i> Ver Perfil Completo</button>
+                    </div>
+                </div>
+
+                <!-- Suga -->
+                <div class="member-card" data-category="rap" data-id="suga">
+                    <div class="member-img-wrapper">
+                        <img src="assets/images/suga.jpg" alt="Suga BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/2/25/Suga_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <div class="member-badge rap-line">Rap Line • Agust D</div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Suga <span class="korean-name">Min Yoongi (민윤기)</span></h3>
+                        <p class="member-role"><i class="fa-solid fa-sliders"></i> Rapero Lider & Compositor</p>
+                        <p class="member-quote">"La vida es dura y las cosas no siempre salen bien, pero debemos ser valientes."</p>
+                        <div class="member-tags">
+                            <span>Agust D</span>
+                            <span>Solo: D-DAY</span>
+                            <span>Productor Genio</span>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-circle-info"></i> Ver Perfil Completo</button>
+                    </div>
+                </div>
+
+                <!-- j-hope -->
+                <div class="member-card" data-category="rap" data-id="jhope">
+                    <div class="member-img-wrapper">
+                        <img src="assets/images/jhope.jpg" alt="j-hope BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/69/J-Hope_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <div class="member-badge rap-line">Rap Line • Sunshine</div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">j-hope <span class="korean-name">Jung Hoseok (정호석)</span></h3>
+                        <p class="member-role"><i class="fa-solid fa-bolt"></i> Bailarín Principal & Rapero</p>
+                        <p class="member-quote">"Soy tu esperanza, tú eres mi esperanza, ¡soy j-hope!"</p>
+                        <div class="member-tags">
+                            <span>Jack In The Box</span>
+                            <span>Lollapalooza Headliner</span>
+                            <span>Dance King</span>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-circle-info"></i> Ver Perfil Completo</button>
+                    </div>
+                </div>
+
+                <!-- Jimin -->
+                <div class="member-card" data-category="vocal" data-id="jimin">
+                    <div class="member-img-wrapper">
+                        <img src="assets/images/jimin.jpg" alt="Jimin BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/5/52/Jimin_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <div class="member-badge vocal-line">Vocal Line • Modern Dance</div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Jimin <span class="korean-name">Park Jimin (박지민)</span></h3>
+                        <p class="member-role"><i class="fa-solid fa-star"></i> Bailarín Principal & Vocalista Lider</p>
+                        <p class="member-quote">"Sigue tu camino, incluso si solo vives por un día."</p>
+                        <div class="member-tags">
+                            <span>Like Crazy (#1 Billboard)</span>
+                            <span>Solo: MUSE</span>
+                            <span>Voz Ángel</span>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-circle-info"></i> Ver Perfil Completo</button>
+                    </div>
+                </div>
+
+                <!-- V -->
+                <div class="member-card" data-category="vocal" data-id="v">
+                    <div class="member-img-wrapper">
+                        <img src="assets/images/v.jpg" alt="V BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/a/ab/V_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <div class="member-badge vocal-line">Vocal Line • I Purple You 💜</div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">V <span class="korean-name">Kim Taehyung (김태형)</span></h3>
+                        <p class="member-role"><i class="fa-solid fa-palette"></i> Sub Vocalista & Visual</p>
+                        <p class="member-quote">"El morado es el último color del arcoíris. Significa que confiaré y te amaré por mucho tiempo."</p>
+                        <div class="member-tags">
+                            <span>Solo: Layover</span>
+                            <span>Voz Barítono</span>
+                            <span>Creador Borahae</span>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-circle-info"></i> Ver Perfil Completo</button>
+                    </div>
+                </div>
+
+                <!-- Jung Kook -->
+                <div class="member-card" data-category="vocal" data-id="jungkook">
+                    <div class="member-img-wrapper">
+                        <img src="assets/images/jungkook.jpg" alt="Jung Kook BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/07/Jungkook_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <div class="member-badge vocal-line">Vocal Line • Golden Maknae</div>
+                    </div>
+                    <div class="member-info">
+                        <h3 class="member-name">Jung Kook <span class="korean-name">Jeon Jungkook (전정국)</span></h3>
+                        <p class="member-role"><i class="fa-solid fa-gem"></i> Vocalista Principal, Centro & Bailarín</p>
+                        <p class="member-quote">"El esfuerzo te hace. Te arrepentirás algún día si no das lo mejor de ti ahora."</p>
+                        <div class="member-tags">
+                            <span>Seven (#1 Billboard)</span>
+                            <span>Solo: GOLDEN</span>
+                            <span>Centro de BTS</span>
+                        </div>
+                        <button class="btn-more"><i class="fa-solid fa-circle-info"></i> Ver Perfil Completo</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Europe Tour & Concert Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">CONCIERTOS EN EUROPA</span>
+                <h2 class="section-title">Galería de Conciertos Épicos en Europa</h2>
+                <p class="section-description">Momentos inolvidables de BTS haciendo historia en los recintos más legendarios de Europa (Londres Wembley Stadium, Stade de France París, Berlín y más).</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-title="Londres - Estadio de Wembley 🇬🇧" data-desc="BTS hizo historia como el primer grupo coreano en agotar dos fechas consecutivas en el mítico Wembley Stadium de Londres frente a 120,000 ARMYs.">
+                    <img src="assets/images/concert_london.jpg" alt="BTS Concert London Wembley" onerror="this.src='https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <span class="city-tag">Londres 🇬🇧</span>
+                        <h4>Wembley Stadium</h4>
+                        <p>Love Yourself: Speak Yourself Tour</p>
+                        <button class="zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Ver Imagen Ampliada</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-title="París - Stade de France 🇫🇷" data-desc="El mar morado iluminó el Estadio de Francia en París durante dos noches inolvidables con shows pirotécnicos y momentos emotivos de los 7 integrantes.">
+                    <img src="assets/images/concert_paris.jpg" alt="BTS Concert Paris Stade de France" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <span class="city-tag">París 🇫🇷</span>
+                        <h4>Stade de France</h4>
+                        <p>Show Legendario en la Capital de la Luz</p>
+                        <button class="zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Ver Imagen Ampliada</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-title="Berlín - Mercedes-Benz Arena 🇩🇪" data-desc="Impresionante conexión con los fans alemanes en Berlín con el tour que consagró a BTS como la mayor banda del planeta.">
+                    <img src="assets/images/concert_berlin.jpg" alt="BTS Concert Berlin" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <span class="city-tag">Berlín 🇩🇪</span>
+                        <h4>Mercedes-Benz Arena</h4>
+                        <p>Atmósfera Neón & ARMY Bombs</p>
+                        <button class="zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Ver Imagen Ampliada</button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-title="Océano Morado (ARMY Bomb Ocean) ✨" data-desc="El deslumbrante mar de luces sincronizadas por el ARMY Bomb lightstick durante los espectáculos europeos de BTS.">
+                    <img src="assets/images/concert_army.jpg" alt="ARMY Bomb Lightstick Ocean" onerror="this.src='https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80'">
+                    <div class="gallery-overlay">
+                        <span class="city-tag">Europa Tour</span>
+                        <h4>ARMY Light Ocean</h4>
+                        <p>Miles de luces moradas en perfecta sincronía</p>
+                        <button class="zoom-btn"><i class="fa-solid fa-magnifying-glass-plus"></i> Ver Imagen Ampliada</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player & Discography Section -->
+    <section class="section discography" id="discography">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">DISCOGRAFÍA & ÉXITOS</span>
+                <h2 class="section-title">Grandes Éxitos de BTS</h2>
+                <p class="section-description">Escucha los himnos globales que romperon récords en Spotify, Billboard y YouTube.</p>
+            </div>
+
+            <!-- Interactive Music Player Container -->
+            <div class="music-player-card">
+                <div class="player-left">
+                    <div class="album-cover-pulse">
+                        <img src="assets/images/bts_hero.jpg" alt="Currently Playing Cover" id="playerCover" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&q=80'">
+                        <div class="sound-wave" id="soundWave">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="player-info">
+                        <h4 id="playerTitle">Dynamite</h4>
+                        <p id="playerArtist">BTS (방탄소년단)</p>
+                        <span class="badge-accent" id="playerAlbum">BE / Single</span>
+                    </div>
+                </div>
+
+                <div class="player-controls">
+                    <div class="control-buttons">
+                        <button class="player-btn" id="prevTrackBtn" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
+                        <button class="player-btn play-main" id="playPauseBtn" title="Reproducir/Pausar"><i class="fa-solid fa-play" id="playIcon"></i></button>
+                        <button class="player-btn" id="nextTrackBtn" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+                    </div>
+                    <div class="progress-bar-wrapper">
+                        <span id="currentTime">0:00</span>
+                        <div class="progress-bar" id="progressBar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span id="durationTime">3:19</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track Playlist Grid -->
+            <div class="playlist-grid" id="playlistGrid">
+                <!-- Tracks dynamically rendered in JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Dates Section -->
+    <section class="section tour" id="tour">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">GIRA Y ESTADIOS</span>
+                <h2 class="section-title">Próxima Gira Mundial & Fechas</h2>
+                <p class="section-description">¡Prepárate para la gira de reunión de BTS 2026-2027 en Europa y las principales ciudades del mundo!</p>
+            </div>
+
+            <div class="tour-table-container">
+                <table class="tour-table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Ciudad / País</th>
+                            <th>Recinto / Estadio</th>
+                            <th>Estado</th>
+                            <th>Entradas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="date-badge">12 JUN 2026</span></td>
+                            <td><strong>Seúl, Corea del Sur 🇰🇷</strong></td>
+                            <td>Estadio Olímpico de Seúl</td>
+                            <td><span class="status-badge sold-out">¡Agotado!</span></td>
+                            <td><button class="btn-sm btn-disabled" disabled>Entradas Agotadas</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="date-badge">18 JUL 2026</span></td>
+                            <td><strong>Londres, Reino Unido 🇬🇧</strong></td>
+                            <td>Wembley Stadium</td>
+                            <td><span class="status-badge upcoming">Próxima Venta</span></td>
+                            <td><button class="btn-sm btn-primary notify-btn"><i class="fa-solid fa-bell"></i> Avisarme</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="date-badge">25 JUL 2026</span></td>
+                            <td><strong>París, Francia 🇫🇷</strong></td>
+                            <td>Stade de France</td>
+                            <td><span class="status-badge upcoming">Próxima Venta</span></td>
+                            <td><button class="btn-sm btn-primary notify-btn"><i class="fa-solid fa-bell"></i> Avisarme</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="date-badge">02 AGO 2026</span></td>
+                            <td><strong>Berlín, Alemania 🇩🇪</strong></td>
+                            <td>Olympiastadion Berlin</td>
+                            <td><span class="status-badge upcoming">Próxima Venta</span></td>
+                            <td><button class="btn-sm btn-primary notify-btn"><i class="fa-solid fa-bell"></i> Avisarme</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="date-badge">15 AGO 2026</span></td>
+                            <td><strong>Madrid, España 🇪🇸</strong></td>
+                            <td>Estadio Cívitas Metropolitano</td>
+                            <td><span class="status-badge upcoming">Próxima Venta</span></td>
+                            <td><button class="btn-sm btn-primary notify-btn"><i class="fa-solid fa-bell"></i> Avisarme</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARMY Fan Zone -->
+    <section class="section army-zone" id="army-zone">
+        <div class="container">
+            <div class="army-card-wrapper">
+                <div class="army-content">
+                    <span class="badge-purple">Fandom Oficial • ARMY Zone</span>
+                    <h2>¡Bienvenido a la Zona ARMY! 💜</h2>
+                    <p>Envía tu amor a RM, Jin, Suga, j-hope, Jimin, V y Jung Kook. Pulsa el botón de abajo para activar la luz del ARMY Bomb y sumar tu apoyo al contador global.</p>
+                    
+                    <div class="army-interactive-box">
+                        <button class="btn-cheer" id="cheerBtn">
+                            <i class="fa-solid fa-heart"></i> ¡Enviar Amor a BTS!
+                        </button>
+                        <div class="cheer-counter">
+                            <span id="cheerCount">7,777,777</span> Corazones de ARMY 💜
+                        </div>
+                    </div>
+
+                    <form class="newsletter-form" id="armyNewsletterForm">
+                        <h4>Suscríbete al boletín oficial de ARMY para alertas de conciertos en Europa:</h4>
+                        <div class="form-group">
+                            <input type="email" placeholder="Tu correo electrónico ARMY..." required id="armyEmail">
+                            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Unirme</button>
+                        </div>
+                        <p class="form-notice" id="newsletterMsg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">
+                    <span class="logo-symbol">⟁</span>
+                    <span class="logo-text">BTS <span class="logo-korean">방탄소년단</span></span>
+                </a>
+                <p>Beyond The Scene — Fan Landing Page dedicada a los 7 integrantes de BTS y su impacto cultural mundial.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#members">RM, Jin, Suga, j-hope, Jimin, V, Jungkook</a></li>
+                    <li><a href="#gallery">Gira por Europa</a></li>
+                    <li><a href="#discography">Música & Discografía</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Redes Oficiales</h4>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/@BTS" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/bts.bighitofficial/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/bts_bighit" target="_blank" aria-label="Twitter X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://weverse.io/bts" target="_blank" aria-label="Weverse"><i class="fa-solid fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 BTS Landing Page. Diseñado con 💜 para ARMY. Crédito de imágenes: BIGHIT MUSIC & Wikimedia Commons.</p>
+        </div>
+    </footer>
+
+    <!-- Member Profile Modal -->
+    <div class="modal" id="memberModal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamically populated in app.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="lightbox" id="lightboxModal">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Concert Photo Large" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript App -->
+    <script src="js/app.js"></script>
+</body>
+</html>
+
