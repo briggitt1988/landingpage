@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             soloWork: "Agust D (2016), D-2 (2020), D-DAY (2023)",
             quote: "La vida es dura y las cosas no siempre salen bien, pero debemos ser valientes y continuar.",
             image: "assets/images/suga.jpg",
-            fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/2/25/Suga_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
+            fallbackImg: "assets/images/suga.jpg",
             bio: "Min Yoongi, conocido profesionalmente como Suga y Agust D en su faceta solista, es uno de los productores de hip-hop más influyentes de la industria asiática. Ha producido hits para IU, PSY, Halsey y Juice WRLD. Su gira mundial solista 'SUGA | Agust D TOUR D-DAY' agotó estadios en EE.UU. y Asia."
         },
         jhope: {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             soloWork: "FACE (2023), MUSE (2024), Lie, Serendipity, Filter",
             quote: "Sigue tu camino, incluso si solo vives por un día.",
             image: "assets/images/jimin.jpg",
-            fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/5/52/Jimin_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
+            fallbackImg: "assets/images/jimin.jpg",
             bio: "Formado en danza contemporánea en la Busan High School of Arts como el alumno top de su promoción, Jimin destaca por sus giros gráciles y tono vocal angelical. Su canción 'Like Crazy' alcanzó el puesto #1 en el Billboard Hot 100, convirtiéndolo en el primer solista coreano en la historia en lograr dicha hazaña."
         },
         v: {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             soloWork: "Layover (2023), FRI(END)S (2024), Stigma, Singularity, Sweet Night",
             quote: "El morado es el último color del arcoíris. Significa que confiaré y te amaré por mucho tiempo (Borahae 💜).",
             image: "assets/images/v.jpg",
-            fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/a/ab/V_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
+            fallbackImg: "assets/images/v.jpg",
             bio: "V posee una inconfundible voz barítono profunda y seductora con una marcada afinidad hacia el R&B y el Jazz. Es el creador del término mundialmente famoso 'I Purple You' (보라해 / Borahae) que simboliza la unión indestructible entre BTS y ARMY. Su álbum solista 'Layover' rompió récords de ventas en su primer día."
         },
         jungkook: {
@@ -465,5 +465,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    // Purple heart rain across the page
+    const createRainHeart = () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        const heart = document.createElement('div');
+        heart.className = 'heart-rain';
+        heart.textContent = '💜';
+        heart.style.left = `${Math.random() * 100}vw`;
+        heart.style.fontSize = `${0.8 + Math.random() * 1.2}rem`;
+        heart.style.animationDuration = `${4 + Math.random() * 4}s`;
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 8500);
+    };
+
+    for (let index = 0; index < 10; index++) {
+        setTimeout(createRainHeart, index * 350);
+    }
+    setInterval(createRainHeart, 550);
 });
 
