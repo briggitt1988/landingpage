@@ -5,22 +5,22 @@
    ========================================== */
 
 :root {
-    --bg-dark: #0f0a19;
-    --bg-card: rgba(26, 17, 43, 0.7);
-    --bg-card-hover: rgba(38, 24, 64, 0.85);
-    --bg-glass: rgba(255, 255, 255, 0.04);
+    --bg-dark: #0d0916;
+    --bg-card: rgba(28, 18, 42, 0.9);
+    --bg-card-hover: rgba(42, 28, 62, 0.96);
+    --bg-glass: rgba(255, 255, 255, 0.06);
     
-    --purple-primary: #8b5cf6;
-    --purple-light: #a855f7;
-    --purple-glow: rgba(168, 85, 247, 0.5);
+    --purple-primary: #bf8cff;
+    --purple-light: #f0d9ff;
+    --purple-glow: rgba(191, 140, 255, 0.5);
     
-    --pink-neon: #ec4899;
-    --gold-accent: #f59e0b;
-    --cyan-glow: #06b6d4;
+    --pink-neon: #ffb5d7;
+    --gold-accent: #ffdc8a;
+    --cyan-glow: #9ae7ff;
     
-    --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --border-color: rgba(168, 85, 247, 0.2);
+    --text-main: #ffffff;
+    --text-muted: #f3f5ff;
+    --border-color: rgba(216, 178, 255, 0.5);
     
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Poppins', sans-serif;
@@ -87,6 +87,12 @@ a {
     transition: var(--transition);
 }
 
+:focus-visible {
+    outline: 3px solid var(--gold-accent);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px rgba(255, 220, 138, 0.28);
+}
+
 .container {
     width: 90%;
     max-width: 1280px;
@@ -116,12 +122,12 @@ a {
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 2px;
-    color: var(--purple-light);
+    color: #f2d9ff;
     text-transform: uppercase;
     margin-bottom: 12px;
     padding: 4px 14px;
-    background: rgba(168, 85, 247, 0.1);
-    border: 1px solid var(--border-color);
+    background: rgba(18, 8, 29, 0.9);
+    border: 1px solid rgba(215, 171, 255, 0.45);
     border-radius: 50px;
 }
 
@@ -175,9 +181,9 @@ a {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(12, 8, 18, 0.9);
+    color: #f8fafc;
+    border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .btn-secondary:hover {
@@ -186,9 +192,9 @@ a {
 }
 
 .btn-glow {
-    background: rgba(245, 158, 11, 0.15);
-    color: var(--gold-accent);
-    border: 1px solid rgba(245, 158, 11, 0.4);
+    background: rgba(18, 11, 5, 0.9);
+    color: #ffd890;
+    border: 1px solid rgba(255, 191, 90, 0.6);
 }
 
 .btn-glow:hover {
@@ -369,9 +375,9 @@ a {
     align-items: center;
     gap: 8px;
     padding: 6px 16px;
-    background: rgba(245, 158, 11, 0.15);
-    border: 1px solid rgba(245, 158, 11, 0.4);
-    color: var(--gold-accent);
+    background: rgba(18, 11, 5, 0.9);
+    border: 1px solid rgba(255, 191, 90, 0.6);
+    color: #ffd890;
     border-radius: 30px;
     font-size: 0.85rem;
     font-weight: 700;
@@ -433,9 +439,13 @@ a {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    color: var(--text-muted);
+    color: var(--text-main);
     font-size: 1.5rem;
     animation: bounce 2s infinite;
+    border-radius: 999px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 @keyframes bounce {
@@ -447,9 +457,20 @@ a {
 /* ==========================================
    3. ABOUT SECTION
    ========================================== */
+.about-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.9fr);
+    gap: 30px;
+    align-items: start;
+}
+
+.about-main {
+    min-width: 0;
+}
+
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
 }
 
@@ -491,6 +512,119 @@ a {
 .about-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
+}
+
+.about-aside {
+    position: relative;
+}
+
+.aside-sticky {
+    position: sticky;
+    top: 110px;
+    padding: 28px 24px;
+    background: linear-gradient(180deg, rgba(88, 28, 135, 0.38), rgba(15, 10, 25, 0.96));
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.aside-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: var(--purple-light);
+    margin-bottom: 16px;
+}
+
+.aside-sticky h3 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+}
+
+.aside-event {
+    padding: 18px 16px;
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 20px;
+}
+
+.aside-date {
+    display: inline-block;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: var(--gold-accent);
+    margin-bottom: 8px;
+}
+
+.aside-event p {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.aside-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+    margin-bottom: 22px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.aside-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aside-list i {
+    color: var(--pink-neon);
+}
+
+.aside-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.aside-metrics div {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 14px 10px;
+    text-align: center;
+}
+
+.aside-metrics strong {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--purple-light);
+    margin-bottom: 4px;
+}
+
+.aside-metrics span {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+}
+
+.aside-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--purple-primary), var(--pink-neon));
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.35);
+}
+
+.aside-cta:hover {
+    transform: translateY(-2px);
 }
 
 /* ==========================================
@@ -1012,13 +1146,13 @@ a {
 }
 
 .status-badge.sold-out {
-    background: rgba(239, 68, 68, 0.15);
-    color: #f87171;
+    background: rgba(35, 10, 10, 0.9);
+    color: #ffb3b3;
 }
 
 .status-badge.upcoming {
-    background: rgba(16, 185, 129, 0.15);
-    color: #34d399;
+    background: rgba(8, 22, 18, 0.9);
+    color: #a7f3d0;
 }
 
 .btn-sm {
@@ -1428,6 +1562,35 @@ a {
     
     .mobile-toggle {
         display: block;
+    }
+
+    .about-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .about-aside {
+        order: 2;
+    }
+
+    .aside-sticky {
+        position: static;
+        top: auto;
+        padding: 22px 18px;
+        border-radius: 22px;
+        background: linear-gradient(180deg, rgba(88, 28, 135, 0.52), rgba(15, 10, 25, 0.96));
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+    }
+
+    .aside-sticky h3 {
+        font-size: 1.5rem;
+    }
+
+    .aside-event {
+        padding: 14px 12px;
+    }
+
+    .aside-metrics {
+        gap: 10px;
     }
     
     .hero-title { font-size: 2.4rem; }

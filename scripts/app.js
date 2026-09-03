@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mbti: "ENFP / ENTP",
             soloWork: "Indigo (2022), Right Place, Wrong Person (2024)",
             quote: "No importa quién seas, de dónde vengas o tu color de piel: habla por ti mismo.",
-            image: "assets/images/rm.jpg",
+            image: "images/rm.webp",
             fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/c/ca/RM_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
             bio: "RM es el líder visionary y pilar intelectual de BTS. Con un IQ de 148 y fluidez en inglés aprendida viendo la serie 'Friends', ha compuesto más de 200 canciones registradas en la KOMCA. Dio un discurso histórico en las Naciones Unidas (ONU) promoviendo la campaña 'Love Yourself'. Su álbum en solitario 'Indigo' recibió aclamación de la crítica internacional por su fusión de arte moderno y hip-hop introspectivo."
         },
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mbti: "INTP",
             soloWork: "The Astronaut (2022), Happy (2024), Epiphany, Awake",
             quote: "Tu presencia puede dar felicidad. Espero que recuerdes eso siempre.",
-            image: "assets/images/jin.jpg",
+            image: "images/jin.webp",
             fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/e/e0/BTS_Jin_on_June_12%2C_2024_%282%29.jpg",
             bio: "Apodado cariñosamente 'Worldwide Handsome', Jin es el integrante mayor de BTS. Reconocido por su impresionante registro vocal falsete y su carisma en el escenario. En 2024 fue portador de la antorcha olímpica para los Juegos Olímpicos de París 2024 representando a Corea del Sur. Su sencillo 'The Astronaut' coescrito con Coldplay fue un éxito mundial."
         },
@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
             mbti: "ISTP",
             soloWork: "Agust D (2016), D-2 (2020), D-DAY (2023)",
             quote: "La vida es dura y las cosas no siempre salen bien, pero debemos ser valientes y continuar.",
-            image: "assets/images/suga.jpg",
-            fallbackImg: "assets/images/suga.jpg",
+            image: "images/suga.webp",
+            fallbackImg: "images/suga.jpg",
             bio: "Min Yoongi, conocido profesionalmente como Suga y Agust D en su faceta solista, es uno de los productores de hip-hop más influyentes de la industria asiática. Ha producido hits para IU, PSY, Halsey y Juice WRLD. Su gira mundial solista 'SUGA | Agust D TOUR D-DAY' agotó estadios en EE.UU. y Asia."
         },
         jhope: {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mbti: "INFJ",
             soloWork: "Jack In The Box (2022), HOPE ON THE STREET VOL.1 (2024), Hope World",
             quote: "Soy tu esperanza, tú eres mi esperanza, ¡soy j-hope!",
-            image: "assets/images/jhope.jpg",
+            image: "images/jhope.webp",
             fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/6/69/J-Hope_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
             bio: "j-hope es la energía vibrante y el capitán de baile de BTS. Antes de debutar perteneció al renombrado grupo de street dance 'Neuron'. Hizo historia en 2022 como el primer artista surcoreano en encabezar el escenario principal del festival Lollapalooza en Chicago ante más de 100,000 espectadores."
         },
@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
             mbti: "ESTP",
             soloWork: "FACE (2023), MUSE (2024), Lie, Serendipity, Filter",
             quote: "Sigue tu camino, incluso si solo vives por un día.",
-            image: "assets/images/jimin.jpg",
-            fallbackImg: "assets/images/jimin.jpg",
+            image: "images/jimin.webp",
+            fallbackImg: "images/jimin.jpg",
             bio: "Formado en danza contemporánea en la Busan High School of Arts como el alumno top de su promoción, Jimin destaca por sus giros gráciles y tono vocal angelical. Su canción 'Like Crazy' alcanzó el puesto #1 en el Billboard Hot 100, convirtiéndolo en el primer solista coreano en la historia en lograr dicha hazaña."
         },
         v: {
@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
             mbti: "INFP",
             soloWork: "Layover (2023), FRI(END)S (2024), Stigma, Singularity, Sweet Night",
             quote: "El morado es el último color del arcoíris. Significa que confiaré y te amaré por mucho tiempo (Borahae 💜).",
-            image: "assets/images/v.jpg",
-            fallbackImg: "assets/images/v.jpg",
+            image: "images/v.webp",
+            fallbackImg: "images/v.jpg",
             bio: "V posee una inconfundible voz barítono profunda y seductora con una marcada afinidad hacia el R&B y el Jazz. Es el creador del término mundialmente famoso 'I Purple You' (보라해 / Borahae) que simboliza la unión indestructible entre BTS y ARMY. Su álbum solista 'Layover' rompió récords de ventas en su primer día."
         },
         jungkook: {
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mbti: "INTP / ISFP",
             soloWork: "GOLDEN (2023), Seven feat. Latto, Standing Next to You, Euphoria",
             quote: "El esfuerzo te hace. Te arrepentirás algún día si no das lo mejor de ti ahora.",
-            image: "assets/images/jungkook.jpg",
+            image: "images/jungkook.webp",
             fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/0/07/Jungkook_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
             bio: "Conocido mundialmente como el 'Golden Maknae' (el menor de oro) por su destreza en canto, baile, deportes y arte. Interpretó el himno oficial 'Dreamers' en la ceremonia de apertura de la Copa Mundial de la FIFA Qatar 2022. Su megahit 'Seven' acumuló más de 1,000 millones de streams en Spotify en tiempo récord mundial."
         }
@@ -106,13 +106,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. DATA: TRACKLIST PLAYLIST
     // ==========================================
     const tracks = [
-        { id: 1, title: "Dynamite", album: "BE (Deluxe Edition)", duration: "3:19", cover: "assets/images/bts_hero.jpg", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
-        { id: 2, title: "Butter", album: "Butter Single", duration: "2:44", cover: "assets/images/jungkook.jpg", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
-        { id: 3, title: "Boy With Luv (feat. Halsey)", album: "MAP OF THE SOUL: PERSONA", duration: "3:49", cover: "assets/images/rm.jpg", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
-        { id: 4, title: "Spring Day (봄날)", album: "YOU NEVER WALK ALONE", duration: "4:34", cover: "assets/images/jimin.jpg", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" },
-        { id: 5, title: "Seven (feat. Latto)", album: "GOLDEN (Jung Kook)", duration: "3:04", cover: "assets/images/jungkook.jpg", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" },
-        { id: 6, title: "Like Crazy", album: "FACE (Jimin)", duration: "3:32", cover: "assets/images/jimin.jpg", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" },
-        { id: 7, title: "Run BTS (달려라 방탄)", album: "Proof", duration: "3:25", cover: "assets/images/suga.jpg", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" }
+        { id: 1, title: "Dynamite", album: "BE (Deluxe Edition)", duration: "3:19", cover: "images/bts_hero.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+        { id: 2, title: "Butter", album: "Butter Single", duration: "2:44", cover: "images/jungkook.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+        { id: 3, title: "Boy With Luv (feat. Halsey)", album: "MAP OF THE SOUL: PERSONA", duration: "3:49", cover: "images/rm.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
+        { id: 4, title: "Spring Day (봄날)", album: "YOU NEVER WALK ALONE", duration: "4:34", cover: "images/jimin.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" },
+        { id: 5, title: "Seven (feat. Latto)", album: "GOLDEN (Jung Kook)", duration: "3:04", cover: "images/jungkook.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" },
+        { id: 6, title: "Like Crazy", album: "FACE (Jimin)", duration: "3:32", cover: "images/jimin.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" },
+        { id: 7, title: "Run BTS (달려라 방탄)", album: "Proof", duration: "3:25", cover: "images/suga.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" }
     ];
 
     let currentTrackIndex = 0;
@@ -137,9 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileToggle) {
         mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            const isOpen = navLinks.classList.toggle('active');
+            mobileToggle.setAttribute('aria-expanded', String(isOpen));
             const icon = mobileToggle.querySelector('i');
-            if (navLinks.classList.contains('active')) {
+            if (isOpen) {
                 icon.className = 'fa-solid fa-xmark';
             } else {
                 icon.className = 'fa-solid fa-bars';
@@ -400,6 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (colorModes[currentModeIndex]) {
                 document.body.classList.add(colorModes[currentModeIndex]);
             }
+            armyBombToggle.setAttribute('aria-pressed', String(currentModeIndex !== 0));
             
             // Pulse effect animation
             armyBombToggle.style.transform = 'scale(1.2)';

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" as="image" href="images/bts_hero.webp" fetchpriority="high">
 </head>
 <body>
 
@@ -35,11 +36,11 @@
             </nav>
 
             <div class="nav-actions">
-                <button class="army-bomb-btn" id="armyBombToggle" title="Cambiar luz ARMY Bomb">
-                    <i class="fa-solid fa-lightbulb"></i> <span class="btn-label">ARMY Light</span>
+                <button class="army-bomb-btn" id="armyBombToggle" title="Cambiar luz ARMY Bomb" aria-label="Cambiar color de la luz ARMY" aria-pressed="false">
+                    <i class="fa-solid fa-lightbulb" aria-hidden="true"></i> <span class="btn-label">ARMY Light</span>
                 </button>
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Menú navegación">
-                    <i class="fa-solid fa-bars"></i>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menú navegación" aria-expanded="false">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
@@ -48,7 +49,7 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-bg">
-            <img src="assets/images/bts_hero.jpg" alt="BTS Group Banner" id="heroImage" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1600&q=80'">
+            <img src="images/bts_hero.webp" alt="BTS Group Banner" id="heroImage" fetchpriority="high" loading="eager" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1600&q=80'">
             <div class="hero-overlay"></div>
         </div>
         <div class="container hero-content">
@@ -81,7 +82,7 @@
                 </div>
             </div>
         </div>
-        <a href="#about" class="scroll-down"><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#about" class="scroll-down" aria-label="Ir a la siguiente sección"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
     </section>
 
     <!-- About Section -->
@@ -93,22 +94,53 @@
                 <p class="section-description">Desde su debut en 2013 en Seúl hasta llenar estadios míticos como Wembley en Londres y Stade de France en París, BTS ha inspirado a millones de personas con su mensaje de 'Love Yourself'.</p>
             </div>
 
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="about-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <h3>Mensaje de Autoestima</h3>
-                    <p>BTS habla abiertamente sobre la salud mental, las luchas juveniles y el amor propio, convirtiéndose en portavoces en la ONU.</p>
+            <div class="about-shell">
+                <div class="about-main">
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <div class="about-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <h3>Mensaje de Autoestima</h3>
+                            <p>BTS habla abiertamente sobre la salud mental, las luchas juveniles y el amor propio, convirtiéndose en portavoces en la ONU.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <h3>Récords Mundiales</h3>
+                            <p>Primer grupo coreano nominados al Grammy, récords en Guinness, estadios abarrotados en minutos en toda Europa y América.</p>
+                        </div>
+                        <div class="about-card">
+                            <div class="about-icon"><i class="fa-solid fa-globe"></i></div>
+                            <h3>Reunión 2026</h3>
+                            <p>Tras completar su servicio militar obligatorio, los 7 miembros regresan juntos para iniciar una nueva era histórica de conciertos mundiales.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-card">
-                    <div class="about-icon"><i class="fa-solid fa-trophy"></i></div>
-                    <h3>Récords Mundiales</h3>
-                    <p>Primer grupo coreano nominados al Grammy, récords en Guinness, estadios abarrotados en minutos en toda Europa y América.</p>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon"><i class="fa-solid fa-globe"></i></div>
-                    <h3>Reunión 2026</h3>
-                    <p>Tras completar su servicio militar obligatorio, los 7 miembros regresan juntos para iniciar una nueva era histórica de conciertos mundiales.</p>
-                </div>
+
+                <aside class="about-aside">
+                    <div class="aside-sticky">
+                        <span class="aside-eyebrow">ARMY SPOTLIGHT</span>
+                        <h3>La próxima gran noche</h3>
+                        <div class="aside-event">
+                            <span class="aside-date">18 JUL 2026</span>
+                            <p>Londres • Wembley Stadium</p>
+                        </div>
+                        <ul class="aside-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Dos noches históricas</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Venta prioritária para ARMY</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Setlist sorpresa + fan service</li>
+                        </ul>
+                        <div class="aside-metrics">
+                            <div>
+                                <strong>100M+</strong>
+                                <span>ARMYs</span>
+                            </div>
+                            <div>
+                                <strong>7</strong>
+                                <span>Miembros</span>
+                            </div>
+                        </div>
+                        <a href="#tour" class="aside-cta">Ver fechas</a>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
@@ -134,7 +166,7 @@
                 <!-- RM -->
                 <div class="member-card" data-category="rap" data-id="rm">
                     <div class="member-img-wrapper">
-                        <img src="assets/images/rm.jpg" alt="RM BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/c/ca/RM_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <img src="images/rm.webp" alt="RM BTS" class="member-img" loading="lazy" decoding="async" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/c/ca/RM_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
                         <div class="member-badge rap-line">Rap Line • Líder</div>
                     </div>
                     <div class="member-info">
@@ -153,7 +185,7 @@
                 <!-- Jin -->
                 <div class="member-card" data-category="vocal" data-id="jin">
                     <div class="member-img-wrapper">
-                        <img src="assets/images/jin.jpg" alt="Jin BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e0/BTS_Jin_on_June_12%2C_2024_%282%29.jpg'">
+                        <img src="images/jin.webp" alt="Jin BTS" class="member-img" loading="lazy" decoding="async" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e0/BTS_Jin_on_June_12%2C_2024_%282%29.jpg'">
                         <div class="member-badge vocal-line">Vocal Line • Worldwide Handsome</div>
                     </div>
                     <div class="member-info">
@@ -172,7 +204,7 @@
                 <!-- Suga -->
                 <div class="member-card" data-category="rap" data-id="suga">
                     <div class="member-img-wrapper">
-                        <img src="assets/images/suga.jpg" alt="Suga BTS" class="member-img">
+                        <img src="images/suga.webp" alt="Suga BTS" class="member-img" loading="lazy" decoding="async">
                         <div class="member-badge rap-line">Rap Line • Agust D</div>
                     </div>
                     <div class="member-info">
@@ -191,7 +223,7 @@
                 <!-- j-hope -->
                 <div class="member-card" data-category="rap" data-id="jhope">
                     <div class="member-img-wrapper">
-                        <img src="assets/images/jhope.jpg" alt="j-hope BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/69/J-Hope_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <img src="images/jhope.webp" alt="j-hope BTS" class="member-img" loading="lazy" decoding="async" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/69/J-Hope_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
                         <div class="member-badge rap-line">Rap Line • Sunshine</div>
                     </div>
                     <div class="member-info">
@@ -210,7 +242,7 @@
                 <!-- Jimin -->
                 <div class="member-card" data-category="vocal" data-id="jimin">
                     <div class="member-img-wrapper">
-                        <img src="assets/images/jimin.jpg" alt="Jimin BTS" class="member-img">
+                        <img src="images/jimin.webp" alt="Jimin BTS" class="member-img" loading="lazy" decoding="async">
                         <div class="member-badge vocal-line">Vocal Line • Modern Dance</div>
                     </div>
                     <div class="member-info">
@@ -229,7 +261,7 @@
                 <!-- V -->
                 <div class="member-card" data-category="vocal" data-id="v">
                     <div class="member-img-wrapper">
-                        <img src="assets/images/v.jpg" alt="V BTS" class="member-img">
+                        <img src="images/v.webp" alt="V BTS" class="member-img" loading="lazy" decoding="async">
                         <div class="member-badge vocal-line">Vocal Line • I Purple You 💜</div>
                     </div>
                     <div class="member-info">
@@ -248,7 +280,7 @@
                 <!-- Jung Kook -->
                 <div class="member-card" data-category="vocal" data-id="jungkook">
                     <div class="member-img-wrapper">
-                        <img src="assets/images/jungkook.jpg" alt="Jung Kook BTS" class="member-img" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/07/Jungkook_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
+                        <img src="images/jungkook.webp" alt="Jung Kook BTS" class="member-img" loading="lazy" decoding="async" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/07/Jungkook_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg'">
                         <div class="member-badge vocal-line">Vocal Line • Golden Maknae</div>
                     </div>
                     <div class="member-info">
@@ -279,7 +311,7 @@
 
             <div class="gallery-grid">
                 <div class="gallery-item" data-title="Londres - Estadio de Wembley 🇬🇧" data-desc="BTS hizo historia como el primer grupo coreano en agotar dos fechas consecutivas en el mítico Wembley Stadium de Londres frente a 120,000 ARMYs.">
-                    <img src="assets/images/concert_london.jpg" alt="BTS Concert London Wembley" onerror="this.src='https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&q=80'">
+                    <img src="images/concert_london.webp" alt="BTS Concert London Wembley" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&q=80'">
                     <div class="gallery-overlay">
                         <span class="city-tag">Londres 🇬🇧</span>
                         <h4>Wembley Stadium</h4>
@@ -289,7 +321,7 @@
                 </div>
 
                 <div class="gallery-item" data-title="París - Stade de France 🇫🇷" data-desc="El mar morado iluminó el Estadio de Francia en París durante dos noches inolvidables con shows pirotécnicos y momentos emotivos de los 7 integrantes.">
-                    <img src="assets/images/concert_paris.jpg" alt="BTS Concert Paris Stade de France" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80'">
+                    <img src="images/concert_paris.webp" alt="BTS Concert Paris Stade de France" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80'">
                     <div class="gallery-overlay">
                         <span class="city-tag">París 🇫🇷</span>
                         <h4>Stade de France</h4>
@@ -299,7 +331,7 @@
                 </div>
 
                 <div class="gallery-item" data-title="Berlín - Mercedes-Benz Arena 🇩🇪" data-desc="Impresionante conexión con los fans alemanes en Berlín con el tour que consagró a BTS como la mayor banda del planeta.">
-                    <img src="assets/images/concert_berlin.jpg" alt="BTS Concert Berlin" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80'">
+                    <img src="images/concert_berlin.webp" alt="BTS Concert Berlin" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80'">
                     <div class="gallery-overlay">
                         <span class="city-tag">Berlín 🇩🇪</span>
                         <h4>Mercedes-Benz Arena</h4>
@@ -309,7 +341,7 @@
                 </div>
 
                 <div class="gallery-item" data-title="Océano Morado (ARMY Bomb Ocean) ✨" data-desc="El deslumbrante mar de luces sincronizadas por el ARMY Bomb lightstick durante los espectáculos europeos de BTS.">
-                    <img src="assets/images/concert_army.jpg" alt="ARMY Bomb Lightstick Ocean" onerror="this.src='https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80'">
+                    <img src="images/concert_army.webp" alt="ARMY Bomb Lightstick Ocean" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80'">
                     <div class="gallery-overlay">
                         <span class="city-tag">Europa Tour</span>
                         <h4>ARMY Light Ocean</h4>
@@ -334,7 +366,7 @@
             <div class="music-player-card">
                 <div class="player-left">
                     <div class="album-cover-pulse">
-                        <img src="assets/images/bts_hero.jpg" alt="Currently Playing Cover" id="playerCover" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&q=80'">
+                        <img src="images/bts_hero.webp" alt="Currently Playing Cover" id="playerCover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&q=80'">
                         <div class="sound-wave" id="soundWave">
                             <span></span><span></span><span></span><span></span><span></span>
                         </div>
@@ -348,9 +380,9 @@
 
                 <div class="player-controls">
                     <div class="control-buttons">
-                        <button class="player-btn" id="prevTrackBtn" title="Anterior"><i class="fa-solid fa-backward-step"></i></button>
-                        <button class="player-btn play-main" id="playPauseBtn" title="Reproducir/Pausar"><i class="fa-solid fa-play" id="playIcon"></i></button>
-                        <button class="player-btn" id="nextTrackBtn" title="Siguiente"><i class="fa-solid fa-forward-step"></i></button>
+                        <button class="player-btn" id="prevTrackBtn" title="Anterior" aria-label="Reproducir pista anterior"><i class="fa-solid fa-backward-step" aria-hidden="true"></i></button>
+                        <button class="player-btn play-main" id="playPauseBtn" title="Reproducir/Pausar" aria-label="Reproducir o pausar la pista actual"><i class="fa-solid fa-play" id="playIcon" aria-hidden="true"></i></button>
+                        <button class="player-btn" id="nextTrackBtn" title="Siguiente" aria-label="Reproducir siguiente pista"><i class="fa-solid fa-forward-step" aria-hidden="true"></i></button>
                     </div>
                     <div class="progress-bar-wrapper">
                         <span id="currentTime">0:00</span>
@@ -502,7 +534,7 @@
     <!-- Member Profile Modal -->
     <div class="modal" id="memberModal">
         <div class="modal-content glass-card">
-            <button class="modal-close" id="modalClose">&times;</button>
+            <button class="modal-close" id="modalClose" aria-label="Cerrar perfil del miembro">&times;</button>
             <div class="modal-body" id="modalBody">
                 <!-- Dynamically populated in app.js -->
             </div>
@@ -511,15 +543,15 @@
 
     <!-- Gallery Lightbox Modal -->
     <div class="lightbox" id="lightboxModal">
-        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen ampliada">&times;</button>
         <div class="lightbox-content">
-            <img src="" alt="Concert Photo Large" id="lightboxImg">
+            <img src="" alt="Concert Photo Large" id="lightboxImg" loading="lazy">
             <div class="lightbox-caption" id="lightboxCaption"></div>
         </div>
     </div>
 
     <!-- JavaScript App -->
-    <script src="js/app.js"></script>
+    <script src="scripts/app.js" defer></script>
 </body>
 </html>
 
