@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "No importa quién seas, de dónde vengas o tu color de piel: habla por ti mismo.",
             image: "images/rm.webp",
             fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/c/ca/RM_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
-            bio: "RM es el líder visionary y pilar intelectual de BTS. Con un IQ de 148 y fluidez en inglés aprendida viendo la serie 'Friends', ha compuesto más de 200 canciones registradas en la KOMCA. Dio un discurso histórico en las Naciones Unidas (ONU) promoviendo la campaña 'Love Yourself'. Su álbum en solitario 'Indigo' recibió aclamación de la crítica internacional por su fusión de arte moderno y hip-hop introspectivo."
+            bio: "RM es el líder visionary y pilar intelectual de BTS. Con un IQ de 148 y fluidez en inglés aprendida viendo la serie 'Friends', ha compuesto más de 200 canciones registradas en la KOMCA. Dio un discurso histórico en las Naciones Unidas (ONU) promoviendo la campaña 'Love Yourself'. Su álbum en solitario 'Indigo' recibió aclamación de la crítica internacional por su fusión de arte moderno y hip-hop introspectivo.",
+            review: "Un líder reflexivo que convierte sus ideas, lecturas y sensibilidad artística en una voz que conecta a BTS con el mundo."
         },
         jin: {
             name: "Jin",
@@ -33,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "Tu presencia puede dar felicidad. Espero que recuerdes eso siempre.",
             image: "images/jin.webp",
             fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/e/e0/BTS_Jin_on_June_12%2C_2024_%282%29.jpg",
-            bio: "Apodado cariñosamente 'Worldwide Handsome', Jin es el integrante mayor de BTS. Reconocido por su impresionante registro vocal falsete y su carisma en el escenario. En 2024 fue portador de la antorcha olímpica para los Juegos Olímpicos de París 2024 representando a Corea del Sur. Su sencillo 'The Astronaut' coescrito con Coldplay fue un éxito mundial."
+            bio: "Apodado cariñosamente 'Worldwide Handsome', Jin es el integrante mayor de BTS. Reconocido por su impresionante registro vocal falsete y su carisma en el escenario. En 2024 fue portador de la antorcha olímpica para los Juegos Olímpicos de París 2024 representando a Corea del Sur. Su sencillo 'The Astronaut' coescrito con Coldplay fue un éxito mundial.",
+            review: "Jin combina una voz cálida con un humor contagioso; su presencia aporta elegancia, cercanía y una energía que ilumina cada escenario."
         },
         suga: {
             name: "Suga / Agust D",
@@ -46,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "La vida es dura y las cosas no siempre salen bien, pero debemos ser valientes y continuar.",
             image: "images/suga.webp",
             fallbackImg: "images/suga.jpg",
-            bio: "Min Yoongi, conocido profesionalmente como Suga y Agust D en su faceta solista, es uno de los productores de hip-hop más influyentes de la industria asiática. Ha producido hits para IU, PSY, Halsey y Juice WRLD. Su gira mundial solista 'SUGA | Agust D TOUR D-DAY' agotó estadios en EE.UU. y Asia."
+            bio: "Min Yoongi, conocido profesionalmente como Suga y Agust D en su faceta solista, es uno de los productores de hip-hop más influyentes de la industria asiática. Ha producido hits para IU, PSY, Halsey y Juice WRLD. Su gira mundial solista 'SUGA | Agust D TOUR D-DAY' agotó estadios en EE.UU. y Asia.",
+            review: "Un productor meticuloso y rapero honesto que transforma sus experiencias en canciones intensas, directas y profundamente humanas."
         },
         jhope: {
             name: "j-hope",
@@ -59,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "Soy tu esperanza, tú eres mi esperanza, ¡soy j-hope!",
             image: "images/jhope.webp",
             fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/6/69/J-Hope_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
-            bio: "j-hope es la energía vibrante y el capitán de baile de BTS. Antes de debutar perteneció al renombrado grupo de street dance 'Neuron'. Hizo historia en 2022 como el primer artista surcoreano en encabezar el escenario principal del festival Lollapalooza en Chicago ante más de 100,000 espectadores."
+            bio: "j-hope es la energía vibrante y el capitán de baile de BTS. Antes de debutar perteneció al renombrado grupo de street dance 'Neuron'. Hizo historia en 2022 como el primer artista surcoreano en encabezar el escenario principal del festival Lollapalooza en Chicago ante más de 100,000 espectadores.",
+            review: "Su precisión en el baile y su optimismo natural convierten cada actuación en una descarga de energía, ritmo y esperanza."
         },
         jimin: {
             name: "Jimin",
@@ -72,7 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "Sigue tu camino, incluso si solo vives por un día.",
             image: "images/jimin.webp",
             fallbackImg: "images/jimin.jpg",
-            bio: "Formado en danza contemporánea en la Busan High School of Arts como el alumno top de su promoción, Jimin destaca por sus giros gráciles y tono vocal angelical. Su canción 'Like Crazy' alcanzó el puesto #1 en el Billboard Hot 100, convirtiéndolo en el primer solista coreano en la historia en lograr dicha hazaña."
+            bio: "Formado en danza contemporánea en la Busan High School of Arts como el alumno top de su promoción, Jimin destaca por sus giros gráciles y tono vocal angelical. Su canción 'Like Crazy' alcanzó el puesto #1 en el Billboard Hot 100, convirtiéndolo en el primer solista coreano en la historia en lograr dicha hazaña.",
+            review: "Jimin destaca por una sensibilidad escénica única: cada movimiento y cada nota transmiten delicadeza, emoción y mucha fuerza interior."
         },
         v: {
             name: "V",
@@ -85,7 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "El morado es el último color del arcoíris. Significa que confiaré y te amaré por mucho tiempo (Borahae 💜).",
             image: "images/v.webp",
             fallbackImg: "images/v.jpg",
-            bio: "V posee una inconfundible voz barítono profunda y seductora con una marcada afinidad hacia el R&B y el Jazz. Es el creador del término mundialmente famoso 'I Purple You' (보라해 / Borahae) que simboliza la unión indestructible entre BTS y ARMY. Su álbum solista 'Layover' rompió récords de ventas en su primer día."
+            bio: "V posee una inconfundible voz barítono profunda y seductora con una marcada afinidad hacia el R&B y el Jazz. Es el creador del término mundialmente famoso 'I Purple You' (보라해 / Borahae) que simboliza la unión indestructible entre BTS y ARMY. Su álbum solista 'Layover' rompió récords de ventas en su primer día.",
+            review: "V aporta una identidad artística magnética, con una voz profunda y un estilo cinematográfico que mezcla música, moda y actuación."
         },
         jungkook: {
             name: "Jung Kook",
@@ -98,7 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "El esfuerzo te hace. Te arrepentirás algún día si no das lo mejor de ti ahora.",
             image: "images/jungkook.webp",
             fallbackImg: "https://upload.wikimedia.org/wikipedia/commons/0/07/Jungkook_at_the_2022_Fact_Music_Awards_on_October_8%2C_2022_%28cropped%29.jpg",
-            bio: "Conocido mundialmente como el 'Golden Maknae' (el menor de oro) por su destreza en canto, baile, deportes y arte. Interpretó el himno oficial 'Dreamers' en la ceremonia de apertura de la Copa Mundial de la FIFA Qatar 2022. Su megahit 'Seven' acumuló más de 1,000 millones de streams en Spotify en tiempo récord mundial."
+            bio: "Conocido mundialmente como el 'Golden Maknae' (el menor de oro) por su destreza en canto, baile, deportes y arte. Interpretó el himno oficial 'Dreamers' en la ceremonia de apertura de la Copa Mundial de la FIFA Qatar 2022. Su megahit 'Seven' acumuló más de 1,000 millones de streams en Spotify en tiempo récord mundial.",
+            review: "Jung Kook es un intérprete versátil y preciso: canta, baila y domina el escenario con una naturalidad que explica su apodo de Golden Maknae."
         }
     };
 
@@ -197,6 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h3>${data.name} <span class="korean-name">${data.koreanName}</span></h3>
                             <p class="role"><i class="fa-solid fa-star"></i> ${data.role}</p>
                             <p>${data.bio}</p>
+                            <p class="member-review"><strong>Reseña:</strong> ${data.review}</p>
                             <ul class="modal-details-list">
                                 <li><strong>Línea:</strong> ${data.line}</li>
                                 <li><strong>Nacimiento:</strong> ${data.birth}</li>
@@ -410,7 +418,158 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
-    // 8. ARMY CHEER COUNTER & FLOATING HEARTS
+    // 8. HIDDEN WEATHER WIDGET
+    // ==========================================
+    const weatherToggle = document.getElementById('weatherToggle');
+    const weatherModal = document.getElementById('weatherModal');
+    const weatherModalClose = document.getElementById('weatherModalClose');
+    const weatherFrame = document.getElementById('weatherFrame');
+    let weatherReturnFocus;
+    let weatherAutoCloseTimer;
+
+    function closeWeatherWidget() {
+        if (!weatherModal || !weatherModal.classList.contains('active')) return;
+        window.clearTimeout(weatherAutoCloseTimer);
+        weatherModal.classList.remove('active');
+        weatherModal.setAttribute('aria-hidden', 'true');
+        weatherToggle?.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('weather-modal-open');
+        weatherReturnFocus?.focus();
+    }
+
+    function openWeatherWidget({ readToday = false, autoCloseMs = 0 } = {}) {
+        if (!weatherModal || !weatherFrame) return;
+        weatherReturnFocus = document.activeElement;
+        if (weatherFrame.src === 'about:blank') weatherFrame.src = 'clima/index.html';
+        weatherModal.classList.add('active');
+        weatherModal.setAttribute('aria-hidden', 'false');
+        weatherToggle?.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('weather-modal-open');
+        weatherModalClose?.focus();
+
+        if (autoCloseMs > 0) {
+            window.clearTimeout(weatherAutoCloseTimer);
+            weatherAutoCloseTimer = window.setTimeout(closeWeatherWidget, autoCloseMs);
+        }
+        if (readToday) {
+            const requestReading = () => weatherFrame.contentWindow?.postMessage({ type: 'read-weather-today' }, '*');
+            if (weatherFrame.contentDocument?.readyState === 'complete') {
+                window.setTimeout(requestReading, 150);
+            } else {
+                weatherFrame.addEventListener('load', () => window.setTimeout(requestReading, 150), { once: true });
+            }
+        }
+    }
+
+    weatherToggle?.addEventListener('click', openWeatherWidget);
+    weatherModalClose?.addEventListener('click', closeWeatherWidget);
+    weatherModal?.addEventListener('click', (event) => {
+        if (event.target === weatherModal) closeWeatherWidget();
+    });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeWeatherWidget();
+    });
+
+    // ==========================================
+    // 9. FLOATING VOICE COMMANDS
+    // ==========================================
+    const voiceFab = document.getElementById('voiceFab');
+    const voiceFabStatus = document.getElementById('voiceFabStatus');
+    const VoiceRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const voiceSecureContext = window.isSecureContext || ['localhost', '127.0.0.1'].includes(window.location.hostname);
+    let voiceRecognition;
+    let voiceListening = false;
+
+    function setFloatingVoiceState(state, message) {
+        voiceFab?.classList.toggle('is-listening', state === 'listening');
+        voiceFab?.setAttribute('aria-pressed', String(state === 'listening'));
+        if (voiceFabStatus) voiceFabStatus.textContent = message;
+        if (voiceFab) voiceFab.setAttribute('aria-label', state === 'listening' ? 'Detener comandos de voz' : 'Activar comandos de voz');
+    }
+
+    function runVoiceCommand(transcript) {
+        const command = transcript.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+        const destinations = [
+            { words: ['inicio', 'principal'], selector: '#hero', label: 'Inicio' },
+            { words: ['integrantes', 'miembros'], selector: '#members', label: 'Integrantes' },
+            { words: ['gira', 'europa'], selector: '#gallery', label: 'Gira por Europa' },
+            { words: ['musica', 'discografia'], selector: '#discography', label: 'Música' },
+            { words: ['conciertos', 'concierto'], selector: '#tour', label: 'Conciertos' },
+            { words: ['army', 'zona army'], selector: '#army-zone', label: 'ARMY Zone' }
+        ];
+
+        if (command.includes('clima de hoy') || command.includes('clima ahora') || command.includes('tiempo de hoy')) {
+            openWeatherWidget({ readToday: true, autoCloseMs: 5000 });
+            setFloatingVoiceState('idle', 'Leyendo el clima de hoy');
+            return;
+        }
+        if (command.includes('abrir clima') || command === 'clima' || command.includes('tiempo')) {
+            openWeatherWidget();
+            setFloatingVoiceState('idle', 'Clima abierto');
+            return;
+        }
+        if (command.includes('cerrar clima') || command.includes('cerrar ventana')) {
+            closeWeatherWidget();
+            setFloatingVoiceState('idle', 'Clima cerrado');
+            return;
+        }
+
+        const destination = destinations.find((item) => item.words.some((word) => command.includes(word)));
+        if (destination) {
+            document.querySelector(destination.selector)?.scrollIntoView({ behavior: 'smooth' });
+            setFloatingVoiceState('idle', `Yendo a ${destination.label}`);
+            return;
+        }
+
+        setFloatingVoiceState('idle', 'No entendí el comando');
+    }
+
+    function stopFloatingVoice() {
+        if (voiceListening) voiceRecognition?.stop();
+        voiceListening = false;
+        setFloatingVoiceState('idle', 'Comandos de voz');
+    }
+
+    if (!VoiceRecognition || !voiceSecureContext) {
+        if (voiceFab) {
+            voiceFab.disabled = true;
+            voiceFabStatus.textContent = 'Voz no disponible';
+            voiceFab.title = 'Usa HTTPS o localhost y un navegador compatible';
+        }
+    } else {
+        voiceRecognition = new VoiceRecognition();
+        voiceRecognition.lang = 'es-ES';
+        voiceRecognition.continuous = false;
+        voiceRecognition.interimResults = false;
+        voiceRecognition.maxAlternatives = 1;
+        voiceRecognition.onstart = () => {
+            voiceListening = true;
+            setFloatingVoiceState('listening', 'Escuchando...');
+        };
+        voiceRecognition.onresult = (event) => runVoiceCommand(event.results[0][0].transcript);
+        voiceRecognition.onerror = () => {
+            voiceListening = false;
+            setFloatingVoiceState('idle', 'Intenta de nuevo');
+        };
+        voiceRecognition.onend = () => {
+            voiceListening = false;
+            if (voiceFab?.classList.contains('is-listening')) setFloatingVoiceState('idle', 'Comandos de voz');
+        };
+        voiceFab?.addEventListener('click', () => {
+            if (voiceListening) {
+                stopFloatingVoice();
+                return;
+            }
+            try {
+                voiceRecognition.start();
+            } catch (error) {
+                setFloatingVoiceState('idle', 'Intenta de nuevo');
+            }
+        });
+    }
+
+    // ==========================================
+    // 10. ARMY CHEER COUNTER & FLOATING HEARTS
     // ==========================================
     const cheerBtn = document.getElementById('cheerBtn');
     const cheerCountEl = document.getElementById('cheerCount');

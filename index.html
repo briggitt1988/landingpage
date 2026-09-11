@@ -36,6 +36,9 @@
             </nav>
 
             <div class="nav-actions">
+                <button class="weather-toggle" id="weatherToggle" type="button" title="Abrir widget del clima" aria-label="Abrir widget del clima" aria-controls="weatherModal" aria-expanded="false">
+                    <i class="fa-solid fa-cloud-sun" aria-hidden="true"></i> <span class="btn-label">Clima</span>
+                </button>
                 <button class="army-bomb-btn" id="armyBombToggle" title="Cambiar luz ARMY Bomb" aria-label="Cambiar color de la luz ARMY" aria-pressed="false">
                     <i class="fa-solid fa-lightbulb" aria-hidden="true"></i> <span class="btn-label">ARMY Light</span>
                 </button>
@@ -549,6 +552,23 @@
             <div class="lightbox-caption" id="lightboxCaption"></div>
         </div>
     </div>
+
+    <!-- Weather Widget -->
+    <div class="weather-modal" id="weatherModal" role="dialog" aria-modal="true" aria-labelledby="weatherModalTitle" aria-hidden="true">
+        <div class="weather-modal-content">
+            <div class="weather-modal-heading">
+                <p class="weather-modal-kicker">ARMY forecast</p>
+                <h2 id="weatherModalTitle">El clima, donde estés</h2>
+            </div>
+            <button class="weather-modal-close" id="weatherModalClose" type="button" aria-label="Cerrar widget del clima" title="Cerrar widget del clima">&times;</button>
+            <iframe id="weatherFrame" title="Widget del clima" src="about:blank"></iframe>
+        </div>
+    </div>
+
+    <button class="voice-fab" id="voiceFab" type="button" aria-label="Activar comandos de voz" aria-pressed="false" title="Activar comandos de voz">
+        <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+        <span class="voice-fab-status" id="voiceFabStatus" role="status" aria-live="polite">Comandos de voz</span>
+    </button>
 
     <!-- JavaScript App -->
     <script src="scripts/app.js" defer></script>
