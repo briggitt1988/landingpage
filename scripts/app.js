@@ -113,13 +113,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. DATA: TRACKLIST PLAYLIST
     // ==========================================
     const tracks = [
-        { id: 1, title: "Dynamite", album: "BE (Deluxe Edition)", duration: "3:19", cover: "images/bts_hero.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
-        { id: 2, title: "Butter", album: "Butter Single", duration: "2:44", cover: "images/jungkook.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
-        { id: 3, title: "Boy With Luv (feat. Halsey)", album: "MAP OF THE SOUL: PERSONA", duration: "3:49", cover: "images/rm.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
-        { id: 4, title: "Spring Day (봄날)", album: "YOU NEVER WALK ALONE", duration: "4:34", cover: "images/jimin.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" },
-        { id: 5, title: "Seven (feat. Latto)", album: "GOLDEN (Jung Kook)", duration: "3:04", cover: "images/jungkook.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" },
-        { id: 6, title: "Like Crazy", album: "FACE (Jimin)", duration: "3:32", cover: "images/jimin.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" },
-        { id: 7, title: "Run BTS (달려라 방탄)", album: "Proof", duration: "3:25", cover: "images/suga.webp", audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" }
+        { id: 1, title: "2.0 - BTS", album: "Música local", duration: "0:00", cover: "images/bts_hero.webp", audioUrl: "musica/2.0 - BTS.mp3" },
+        { id: 2, title: "BUTTER. BTS", album: "Música local", duration: "0:00", cover: "images/jungkook.webp", audioUrl: "musica/BUTTER. BTS.mp3" },
+        { id: 3, title: "DYNAMITE. BTS", album: "Música local", duration: "0:00", cover: "images/rm.webp", audioUrl: "musica/DYNAMITE. BTS.mp3" },
+        { id: 4, title: "HOOLIAN. BTS", album: "Música local", duration: "0:00", cover: "images/jimin.webp", audioUrl: "musica/HOOLIAN. BTS.mp3" }
     ];
 
     let currentTrackIndex = 0;
