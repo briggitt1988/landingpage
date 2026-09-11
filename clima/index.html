@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0879b5" />
+    <title>Clima · Uyuni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="weather-shell">
+      <div class="sun-mark" aria-hidden="true"></div>
+      <div class="weather-effects" id="weather-effects" aria-hidden="true">
+        <canvas id="weather-canvas"></canvas>
+      </div>
+      <section class="weather-card" aria-labelledby="app-title">
+        <header class="card-header">
+          <div class="brand-lockup">
+            <span class="brand-kicker">lectura atmosférica</span>
+            <h1 id="app-title">clima<span>.</span></h1>
+          </div>
+          <div class="header-tools">
+            <button class="sound-button" id="sound-button" type="button" aria-label="Activar sonido ambiente" title="Activar sonido ambiente">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4Z" /><path class="sound-wave" d="M17 9.5a4 4 0 0 1 0 5M19.5 7a7.5 7.5 0 0 1 0 10" /></svg>
+            </button>
+            <div class="voice-tool" id="voice-tool">
+              <button class="voice-button" id="voice-button" type="button" aria-label="Activar comandos de voz" title="Activar comandos de voz">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 18v3M8.5 21h7" /></svg>
+              </button>
+              <span class="voice-state" id="voice-state">voz inactiva</span>
+            </div>
+            <button class="location-button" id="location-button" type="button" aria-label="Usar mi ubicación" title="Usar mi ubicación">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z" /><circle cx="12" cy="9" r="2.5" /></svg>
+            </button>
+          </div>
+        </header>
+
+        <form class="search-form" id="search-form" role="search">
+          <label class="sr-only" for="city-input">Buscar ciudad</label>
+          <input id="city-input" name="city" type="search" placeholder="Buscar ciudad..." autocomplete="off" />
+          <button type="submit" aria-label="Buscar clima" title="Buscar clima">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 5 5" /></svg>
+          </button>
+        </form>
+
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+
+        <div class="weather-tabs" role="tablist" aria-label="Vista del clima">
+          <button class="weather-tab is-active" id="now-tab" type="button" role="tab" aria-selected="true" aria-controls="weather-content">Ahora</button>
+          <button class="weather-tab" id="tomorrow-tab" type="button" role="tab" aria-selected="false" aria-controls="weather-content">Mañana</button>
+        </div>
+
+        <div class="weather-content" id="weather-content">
+          <div class="place-row">
+            <div>
+              <p class="eyebrow" id="view-label">ahora en</p>
+              <h2 id="city-name">Uyuni, BO</h2>
+            </div>
+            <p class="date" id="current-date">--</p>
+          </div>
+
+          <div class="main-reading">
+            <div class="weather-icon" id="weather-icon" aria-hidden="true">☀</div>
+            <div class="temperature-wrap">
+              <span class="temperature" id="temperature">--</span><span class="degree">°</span>
+            </div>
+            <div class="condition-wrap">
+              <p id="condition">Cargando...</p>
+              <span id="feels-like">sensación de --°</span>
+            </div>
+          </div>
+
+          <div class="metrics" aria-label="Detalles del clima">
+            <div class="metric"><span>humedad</span><strong id="humidity">--%</strong></div>
+            <div class="metric"><span>viento</span><strong id="wind">-- km/h</strong></div>
+            <div class="metric"><span>visibilidad</span><strong id="visibility">-- km</strong></div>
+          </div>
+
+          <div class="forecast-heading"><span id="forecast-title">próximos días</span><span class="forecast-rule"></span></div>
+          <div class="forecast" id="forecast" aria-label="Pronóstico de los próximos días"></div>
+        </div>
+
+        <footer class="card-footer">
+          <span>datos de OpenWeather</span>
+          <span id="updated-at">actualizando...</span>
+        </footer>
+      </section>
+      <p class="page-note">cielo abierto / <span>salinas de uyuni</span></p>
+      <audio id="ambient-audio" loop preload="metadata" src="sonido/C%C3%B3mo%20Est%C3%A1%20El%20Clima_%20%28Versi%C3%B3n%20T%C3%ADtere%29%20%20Canciones%20Infantiles.mp3"></audio>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
